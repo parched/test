@@ -1,0 +1,8 @@
+build:
+  image: teaci/msys32
+  shell: mingw32
+  pull: true
+  commands:
+    - pacman -S --needed mingw-w64-i686-toolchain mingw-w64-i686-qt5
+    - qmake m_pi
+    - mingw32-make
