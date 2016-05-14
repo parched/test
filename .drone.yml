@@ -3,6 +3,6 @@ build:
   shell: mingw32
   pull: true
   commands:
-    - pacman -S --needed --noprogressbar --noconfirm mingw-w64-i686-toolchain mingw-w64-i686-qt5
+    - pacman -Syu --needed --noprogressbar --noconfirm mingw-w64-i686-toolchain mingw-w64-i686-qt5
     - qmake m_pi
     - mingw32-make
